@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+src/index.js
+dist/bundle.js
+src/index.js.map
