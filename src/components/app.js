@@ -6,13 +6,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 import { ViewModel } from "../../node_modules/geranium/viewmodels/abstract/ViewModel";
 import { routeroot } from "../../node_modules/geranium/routing/concrete/decorators";
+import { promised } from "../../node_modules/geranium/structures/Promised";
+import { ViewDOM } from "../../node_modules/geranium/viewDOM/abstract/ViewDOM";
 let App = class App extends ViewModel {
     view() {
-        return "<h1>Hello world!</h1>";
+        return Header;
+    }
+    documentTitle() {
+        return 'Chocolatium | Home';
     }
 };
 App = __decorate([
     routeroot
 ], App);
 export { App };
+class Header extends ViewDOM {
+    DOM() {
+        return promised(document.querySelector(".page1"));
+    }
+}
 //# sourceMappingURL=app.js.map
