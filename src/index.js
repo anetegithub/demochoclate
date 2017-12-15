@@ -6,5 +6,5 @@ require("bulma-carousel/bulma-carousel.css");
 require("bulma/css/bulma.css");
 GeraniumApp.start({});
 new App().show("body");
-setTimeout(() => document.querySelector("#preloader").remove(), 2700);
+setTimeout(() => document.querySelector("#preloader").remove(), 1);
 //# sourceMappingURL=index.js.map

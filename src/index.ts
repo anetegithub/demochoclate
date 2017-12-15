@@ -8,4 +8,4 @@ require("bulma/css/bulma.css");
 GeraniumApp.start({});
 new App().show("body");
 
-setTimeout(() => document.querySelector("#preloader").remove(), 2700);
+setTimeout(() => document.querySelector("#preloader").remove(), 1);
