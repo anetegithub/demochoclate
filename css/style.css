@@ -1,6 +1,5 @@
 /**/
-@import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One);
-/*        'Pathway Gothic One', sans-serif       */
+/*        'Oswald', sans-serif       */
 
 @import "../css/reset.css";
 @import "../css/grid.css";
@@ -48,7 +47,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
-	font-family: 'Pathway Gothic One', sans-serif ;
+	font-family: 'Oswald', sans-serif ;
 	color: #000;
 }
 
@@ -117,7 +116,7 @@ a:hover {
 
 a.btn {
 	display: inline-block;
-	font: 18px/18px 'Pathway Gothic One', sans-serif;
+	font: 18px/18px 'Oswald', sans-serif;
 	color: #ac2135;
 	background: url(../images/arrow.png) right 4px no-repeat;
 	padding-right: 15px;
@@ -451,7 +450,7 @@ ul.list3 time {
 	padding-top: 2px;
 	height: 36px;
 	text-align: center;
-	font: 24px/18px 'Pathway Gothic One', sans-serif;
+	font: 24px/18px 'Oswald', sans-serif;
 }
 
 ul.list3 h4 {
