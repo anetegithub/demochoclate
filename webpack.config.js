@@ -4,18 +4,15 @@ module.exports = {
     entry: './src/index.js',
     devtool: 'inline-source-map',
     module: {
-        // rules: [
-        //     {
-        //         test: /\.tsx?$/,
-        //         use: 'ts-loader',
-        //         exclude: /node_modules/
-        //     }
-        // ]
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            }
+        ]
     },
     resolve: {
-        extensions: [
-            //   '.tsx', '.ts',
-            '.js']
+        extensions: ['.js']
     },
     output: {
         filename: 'bundle.js',
