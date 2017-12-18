@@ -4,9 +4,11 @@
   "private": true,
   "dependencies": {
     "@types/materialize-css": "^1.0.0",
+    "@types/mustache": "^0.8.30",
     "bulma": "^0.6.1",
     "bulma-carousel": "^0.2.2",
     "geranium": "^0.1.12",
+    "mustache": "^2.3.0",
     "npm-run-all": "^4.1.2",
     "tstoast": "^1.0.1"
   },

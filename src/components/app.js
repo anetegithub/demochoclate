@@ -4,6 +4,10 @@ import { View } from "../../node_modules/geranium/view/abstract/View";
 import { ViewDOM } from "../../node_modules/geranium/viewDOM/abstract/ViewDOM";
 // @routeroot
 export class App extends ViewModel {
+    constructor() {
+        super(...arguments);
+        this.nowYear = (new Date()).getFullYear();
+    }
     view() {
         return Header;
     }

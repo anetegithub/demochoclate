@@ -11,6 +11,8 @@ export class App extends ViewModel {
         return Header;
     }
 
+    nowYear = (new Date()).getFullYear();
+
     sayHello() {
 
     }
