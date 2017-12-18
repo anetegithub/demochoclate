@@ -1,7 +1,6 @@
 /**/
 /*        'Oswald', sans-serif       */
 
-@import "../css/reset.css";
 @import "../css/grid.css";
 @import "../css/superfish.css";
 
@@ -10,9 +9,14 @@ input {
 	border-radius: 0 !important;	 
 }
 
-
 html {
 	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+
+body{
+	min-height: 100%;
 }
 
  a[href^="tel:"] {
@@ -35,7 +39,6 @@ body {
 	color:#767171;
 	position:relative;
 	min-width:960px;
-	background-image: url('../images/background/all.jpg');
 	background-size: contain;
 }
 
@@ -98,7 +101,6 @@ ul.list {
 
 ul.list li {
 	padding-left: 11px;
-	background: url(../images/marker.png) 0 7px no-repeat;
 }
 
 ul.list li+li {
@@ -125,7 +127,6 @@ a.btn {
 	display: inline-block;
 	font: 18px/18px 'Oswald', sans-serif;
 	color: #ac2135;
-	background: url(../images/arrow.png) right 4px no-repeat;
 	padding-right: 15px;
 	margin-right: -49px;
 	margin-top: 30px;
@@ -266,7 +267,6 @@ h1 a img {
 }
 
 #search a {
-	background: url(../images/search_icon.png) 0 0 no-repeat;
 	width: 40px;
 	height: 25px;
 	display: block;
@@ -292,7 +292,6 @@ h1 a img {
 	display: block;
 	float: left;
 	width: 28px;
-	background: url(../images/socials.png) 0 0 no-repeat;
 	height: 28px;
 }
 
@@ -322,7 +321,6 @@ h1 a img {
 .content {
 	padding: 32px 80px 30px;
 	margin-bottom: 223px;
-	background: url(../images/cont_bg.png) 0 0 repeat;
 }
 
 .page1 .content {
@@ -404,7 +402,6 @@ ul.list2 span {
 
 ul.list2 li {
 	padding-left: 11px;
-	background: url(../images/marker.png) 0 8px no-repeat;
 }
 
 ul.list2 li+li {

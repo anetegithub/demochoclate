@@ -1,0 +1,34 @@
+
+body {
+	background-image: url('../images/background/all.jpg');
+}
+.menu_block  {
+	background:url(../images/header_bg.png) 0 0 repeat-x #742432;
+}
+.sf-menu>li {
+	background:url(../images/menu_sep.png) 0 0 repeat-y;
+}
+.sf-menu>li+li {
+	background:url(../images/menu_sep.png) 0 0 repeat-y;
+}
+.sf-menu>li>a{
+	background:url(../images/menu_hover.png) 0 -63px repeat-x;
+}
+ul.list li {
+	background: url(../images/marker.png) 0 7px no-repeat;
+}
+a.btn {
+	background: url(../images/arrow.png) right 4px no-repeat;
+}
+#search a {
+	background: url(../images/search_icon.png) 0 0 no-repeat;
+}
+.socials a {
+	background: url(../images/socials.png) 0 0 no-repeat;
+}
+.content {
+	background: url(../images/cont_bg.png) 0 0 repeat;
+}
+ul.list2 li {
+	background: url(../images/marker.png) 0 8px no-repeat;
+}

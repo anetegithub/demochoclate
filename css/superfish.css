@@ -1,6 +1,5 @@
 .menu_block  {
 	position:relative;
-	background:url(../images/header_bg.png) 0 0 repeat-x #742432;
 	z-index:999;
 }
 
@@ -11,11 +10,6 @@ nav {position:relative;padding:0px 0 0 0}
 .sf-menu>li {
 	position:relative;
 	float:left;
-	background:url(../images/menu_sep.png) 0 0 repeat-y;
-}
-
-.sf-menu>li+li {
-	background:url(../images/menu_sep.png) 0 0 repeat-y;
 }
 
 .sf-menu>li>a{
@@ -28,7 +22,7 @@ nav {position:relative;padding:0px 0 0 0}
 	z-index:999;
 	position:relative;
 	padding:19px 14px 20px;
-	background:url(../images/menu_hover.png) 0 -63px repeat-x;
+	/* background:url(../images/menu_hover.png) 0 -63px repeat-x; */
 }
 
 .sf-menu>li.sfHover>a, .sf-menu>li.current>a, .sf-menu>li:hover>a:hover {

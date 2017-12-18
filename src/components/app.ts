@@ -5,7 +5,7 @@ import { View } from "../../node_modules/geranium/view/abstract/View";
 import { ViewDOM } from "../../node_modules/geranium/viewDOM/abstract/ViewDOM";
 import { Toast } from "../../node_modules/tstoast/Toast";
 
-@routed("/hello/world/app")
+// @routeroot
 export class App extends ViewModel {
     view(): string | (new (...args: any[]) => View) | (new (...args: any[]) => ViewDOM) {
         return Header;
