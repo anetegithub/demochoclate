@@ -9,6 +9,6 @@ require("bulma/css/bulma.css");
 require("../css/style.css");
 GeraniumApp.start({});
 GeraniumApp.register(IBinding, new MustacheBind());
-new App().show("body");
-setTimeout(() => document.querySelector("#preloader").remove(), 1);
+new App();
+setTimeout(() => document.querySelector("#preloader").remove(), 2600);
 //# sourceMappingURL=index.js.map

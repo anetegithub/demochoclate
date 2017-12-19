@@ -7,7 +7,7 @@ import { Toast } from "../../node_modules/tstoast/Toast";
 import { CategoryButton } from "./categoryButton/categoryButton";
 import { Constructor } from "../../node_modules/geranium/structures/Constructor";
 
-// @routeroot
+@routeroot
 export class App extends vm {
 
     constructor() {
