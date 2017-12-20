@@ -1,4 +1,4 @@
-import { ViewModel as vm } from "../../node_modules/geranium/viewmodels/abstract/ViewModel";
+import { ViewModel } from "../../node_modules/geranium/viewmodels/abstract/ViewModel";
 import { routeroot, routed } from "../../node_modules/geranium/routing/concrete/decorators";
 import { promised } from "../../node_modules/geranium/structures/Promised";
 import { View } from "../../node_modules/geranium/view/abstract/View";
@@ -6,33 +6,40 @@ import { ViewDOM } from "../../node_modules/geranium/viewDOM/abstract/ViewDOM";
 import { Toast } from "../../node_modules/tstoast/Toast";
 import { CategoryButton } from "./categoryButton/categoryButton";
 import { Constructor } from "../../node_modules/geranium/structures/Constructor";
+import { Header } from "./header/header";
+import GeraniumApp from '../../node_modules/geranium/runtime/concrete/App';
+import { IViewEngine } from "../../node_modules/geranium/viewengine/interfaces/IViewEngine";
 
 // @routeroot
-export class App extends vm {
-
+export class App extends ViewModel {
     constructor() {
         super();
+        debugger;
         this.btns.push(...[
             new CategoryButton("Темный"),
             new CategoryButton("Молочный"),
             new CategoryButton("Белый"),
-
         ]);
+        GeraniumApp.resolve(IViewEngine).execute({
+            iViewed: this.header,
+            selector: ''
+        });
     }
 
     view(): string | (new (...args: any[]) => View) | (new (...args: any[]) => ViewDOM) {
-        return Header;
+        return AppView;
     }
 
     nowYear = (new Date()).getFullYear();
     btns: Array<CategoryButton> = [];
+    header: Header = new Header();
 
     documentTitle() {
         return 'Chocolatium | Home';
     }
 }
 
-class Header extends ViewDOM {
+class AppView extends ViewDOM {
     DOM(): Promise<HTMLElement[]> {
         return promised([document.querySelector(".page1") as HTMLElement]);
     }
