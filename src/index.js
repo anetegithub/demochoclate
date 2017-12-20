@@ -7,8 +7,18 @@ require("bulma-carousel/carousel.js");
 require("bulma-carousel/bulma-carousel.css");
 require("bulma/css/bulma.css");
 require("../css/style.css");
-GeraniumApp.start({});
-GeraniumApp.register(IBinding, new MustacheBind());
-new App();
-setTimeout(() => document.querySelector("#preloader").remove(), 2600);
+try {
+    GeraniumApp.start({});
+    GeraniumApp.register(IBinding, new MustacheBind());
+    new App();
+    setTimeout(() => document.querySelector("#preloader").remove(), 2600);
+}
+catch (error) {
+    console.log = function () {
+        var h1 = document.createElement("h1");
+        h1.style.color = "red";
+        h1.innerText = error;
+        document.appendChild(h1);
+    };
+}
 //# sourceMappingURL=index.js.map
