@@ -1,10 +1,9 @@
-import { ViewModel } from "../../../node_modules/geranium/viewmodels/abstract/ViewModel";
+import { ViewModelExisted } from "../../../node_modules/geranium/viewmodels/concrete/ViewModelExisted";
 import { HeaderView } from "./headerView";
 import { SocialsPanel } from "../socialsPanel/socialsPanel";
 
-export class Header extends ViewModel {
+export class Header extends ViewModelExisted {
     view() {
-        debugger;
         return HeaderView;
     }
     socials: SocialsPanel = new SocialsPanel();

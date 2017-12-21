@@ -10,5 +10,5 @@ require("../css/style.css");
 
 GeraniumApp.start({});
 GeraniumApp.register(IBinding, new MustacheBind());
-new App().show("body");
+new App().show();
 setTimeout(() => document.querySelector("#preloader").remove(), 1);
