@@ -20,17 +20,22 @@ export class App extends ViewModelExisted {
             new CategoryButton("Молочный"),
             new CategoryButton("Белый"),
         ]);
-        this.header.show();
+        // this.header.show();
     }
 
     view() {
         return AppView;
     }
 
+    toast() {
+        new Toast({
+            text: 'toast body'
+        });
+    }
+
     nowYear = (new Date()).getFullYear();
     btns: Array<CategoryButton> = [];
     header: Header = new Header();
-    search: Search = new Search();
 
     documentTitle() {
         return 'Chocolatium | Home';

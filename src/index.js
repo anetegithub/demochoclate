@@ -8,7 +8,7 @@ require("bulma-carousel/bulma-carousel.css");
 require("bulma/css/bulma.css");
 require("../css/style.css");
 GeraniumApp.start({});
-GeraniumApp.register(IBinding, new MustacheBind());
+GeraniumApp.register(IBinding, MustacheBind);
 new App().show();
 setTimeout(() => document.querySelector("#preloader").remove(), 1);
 //# sourceMappingURL=index.js.map
